@@ -5,22 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos_cv.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300&family=Gruppo&display=swap" rel="stylesheet">
     <title>Pagina sobre CV</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">   
-</head>
-    <script src="scripts_cv.js"></script>
+    <!-- Se incluyo el framework bootstrap pero se lo desestimo por las limitaciones que aportaba -->
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">-->
+</head>  
 <body>
     <header class="">
-        <a href="">
-            <button type="" class=""></button>
-        </a>
-        
         <h1 class="display-1">CURRICULUM VITAE</h1>
     </header>
+
+    <nav class="menu">
+        <!-- <div class="oscurecer"><img src="Menu.svg" class="menu" alt=""></div> -->
+        <button type="" class="botton oscurecer"><img src="Menu.svg" alt=""></button> 
+        <ul class="lista">
+                <li class="item-de-lista"> 
+                    <div class="caja-de-items oscurecer">
+                    <img src="home.svg" alt="">
+                    <a href="" class="item">Inicio</a>
+                    </div>
+                </li>
+
+                <li class="item-de-lista">
+                    <div class="caja-de-items oscurecer"> 
+                    <img src="docs.svg" alt="">
+                    <a href="" class="item">Documentacion</a>
+                    </div>
+                </li>
+            
+                <li class="item-de-lista">
+                    <div class="caja-de-items oscurecer"> 
+                    <img src="eng.svg" alt="">
+                    <a href="" class="item">Configuracion</a>
+                    </div>
+                </li>      
+        </ul>
+    </nav>
+
+    <section class="principal"><!-- Mensaje de bienvenida -->
+        <!-- Incluir foto e parrafos con informacion -->
+        <!--<img src="https://randomuser.me/api/portraits/men/64.jpg" alt=""> -->
+        <h2 class="text-center">DATOS PESRONALES</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, voluptas!</p>
+        <p class="ext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, velit ipsum qui totam tempora beatae dignissimos doloribus maxime quaerat ex adipisci alias blanditiis rerum architecto. Aspernatur cumque est ab nemo tempora! Saepe voluptatem qui ullam, in maiores voluptatibus minus commodi iure quaerat. Dolorum esse expedita soluta, dolore amet qui cupiditate?</p>
+        
+    </section>
     
     <section class=""><!-- Informacion personal -->
         <!-- Incluir foto e parrafos con informacion -->
         <img src="pngwing.com.png" alt="imagen personal">
+        <!--<img src="https://randomuser.me/api/portraits/men/64.jpg" alt=""> -->
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, voluptas!</p>
         <p class="ext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, velit ipsum qui totam tempora beatae dignissimos doloribus maxime quaerat ex adipisci alias blanditiis rerum architecto. Aspernatur cumque est ab nemo tempora! Saepe voluptatem qui ullam, in maiores voluptatibus minus commodi iure quaerat. Dolorum esse expedita soluta, dolore amet qui cupiditate?</p>
         <h2 class="text-center">DATOS PESRONALES</h2>
     </section>
@@ -44,7 +81,9 @@
         
         <p>INFORMACION ADICIONAL</p>
         <small>&copy; 2023 <b>acvDevelopers</b> - TODOS LOS DERECHOS RESEVADOS</small>
-
+        
     </footer>
+
+    <script src="scripts_cv.js"></script>
 </body>
 </html>

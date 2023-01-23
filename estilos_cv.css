@@ -1,40 +1,118 @@
+/* -------------------------------MODIFICACIONES AL BODY--------------------------------------*/
 body{
-    background-color: azure;
-    display: grid ;
-    min-height: 100vh;
+    background-color: rgb(232, 232, 232);
+    margin-left: 66px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    font-size: 12px;
+    /* font-family: 'Figtree', sans-serif; */
+    font-family: 'Red Hat Text', sans-serif;
+    color: #949494;
+}
+/* ----------------------------MODIFICACIONES AL ENCABEZADO------------------------------------------*/
+h1{
+    margin: auto;
 }
 
+header{
+    place-items: center;
+    height: 70px;
+    /* background-color: #add8e6; */
+    background-color: rgb(151, 196, 210) ;
+    display:flex;
+    margin-top: 0;
+   
+}
+
+/* -------------------------------MODIFICACIOENS AL MENU DESPLEGABLE-------------------------------------------*/
+nav{
+    background-color: #FFFFFF;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    border-right: 1px solid rgb(207, 207, 207);
+    font-size: 25px;
+    width: 70px;
+}
+
+.botton{
+    width: 70px;
+    height: 70px;
+    background-color: #FFFFFF;
+    border: none;
+    margin: 0px;
+}
+
+.lista{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.item-de-lista{
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.caja-de-items{
+    display: flex;
+    margin: 10px 0 10px 0px ;
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+    place-items: center;
+}
+
+.oscurecer{
+    transition: all 800ms;
+}
+.oscurecer:hover{
+    background-color: rgb(151, 196, 210) ;
+    /* background-color: #add8e6; */
+}
+
+.item{
+    text-decoration: none;
+    color: rgb(78, 78, 78);
+    margin: 5px 0 5px 30px;
+    font-size: 24px;
+}
+
+/* -----------------------------------MODIFICAIONES AL CONTENIDO DE LA PAGINA----------------------------------*/
+
+.principal{
+    height: 450px;
+    margin: 50px 0px 50px 0px;
+    background-color: rgba(3, 200, 255, 0.1);
+    box-shadow: 20px 0px 20px 0px;
+}
+
+section{
+    margin:30px 0px 30px 0px;
+    background-color: aliceblue;
+    display: flex;
+    place-items: center;
+    padding:10px 10px 10px 10px;
+    justify-content: space-between;
+    height: 300px;
+    box-shadow: 10px 25px 10px 0px;
+    
+}
 img{
     max-width: 250px;
     height: auto;
 }
 
-h1{ 
-    display: flex;
-    margin-right: 15px;
-    width: auto;
-}
-
-header{
-    text-align: center;
-    place-items: center;
-    height: 100px;
-    background-color: #add8e6;
-    display: flex;
-}
-
-button{
-    width: 60px;
-    height: 60px;
-    padding: 15px;
-    margin-left: 25px;
-    background-color: rgb(163, 215, 231);
-    
-    border-radius: 1px;
-}
-
 p{
-    width: 50%;
+    width: 60%;
     margin:0px 10px 0px 25px;
 }
 
@@ -42,26 +120,17 @@ p{
     flex-direction: row-reverse;
 }
 
+/* ------------------------------------------MODIFICACIONES AL FOOTER -----------------------------------------*/
 footer{
     height: 50px;
     background-color: #5f9ea0;
     display: flex;
     justify-content: space-around;
+    color: #252525;
 }
 
-section{
-    margin: 10px 10px 10px 25px;
-    background-color: aliceblue;
-    display: flex;
-    place-items: center;
-    padding:10px 10px 10px 10px;
-    justify-content: space-between;
-}
+
 
 small{
     justify-content: baseline;
-}
-
-a{
-    margin: 25px;
 }
