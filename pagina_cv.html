@@ -1,86 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos_cv.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <!-- anclaje para el uso de logos -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300&family=Gruppo&display=swap" rel="stylesheet">
+    
+    <!-- anclaje para la ruta de familia de fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
     <title>Pagina sobre CV</title>
+
     <!-- Se incluyo el framework bootstrap pero se lo desestimo por las limitaciones que aportaba -->
     <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">-->
+
 </head>  
-<body>
+
+<body id="body">
     <header class="">
         <h1 class="display-1">CURRICULUM VITAE</h1>
     </header>
 
-    <nav class="menu">
+    <nav class="menu" id="menu">
+        
         <!-- <div class="oscurecer"><img src="Menu.svg" class="menu" alt=""></div> -->
-        <button type="" class="botton oscurecer"><img src="Menu.svg" alt=""></button> 
+        
+        <button type="" class="botton caja-de-items" id="cambio_boton"><img src="logos/Menu.svg" alt=""></button> 
+        
         <ul class="lista">
-                <li class="item-de-lista"> 
+                
+            <li class="item-de-lista"> 
                     <div class="caja-de-items oscurecer">
-                    <img src="home.svg" alt="">
+                    <img src="logos/home.svg" alt="">
                     <a href="" class="item">Inicio</a>
                     </div>
-                </li>
+            </li>
 
-                <li class="item-de-lista">
+            <li class="item-de-lista">
                     <div class="caja-de-items oscurecer"> 
-                    <img src="docs.svg" alt="">
+                    <img src="logos/Docs.svg" alt="">
                     <a href="" class="item">Documentacion</a>
                     </div>
-                </li>
+            </li>
             
-                <li class="item-de-lista">
-                    <div class="caja-de-items oscurecer"> 
-                    <img src="eng.svg" alt="">
-                    <a href="" class="item">Configuracion</a>
-                    </div>
-                </li>      
+            <li class="item-de-lista">
+                
+                <div class="caja-de-items oscurecer"> 
+                    
+                    <img src="logos/eng.svg" alt="">
+                    
+                    <button class=" item switch" id="animado">
+                        
+                        <span><img src="logos/sol.svg" alt=""></span>
+                        <span><img src="logos/Luna.svg" alt=""></span>   
+                    
+                    </button>
+                
+                </div>
+            
+            </li>      
+        
         </ul>
+    
     </nav>
 
-    <section class="principal"><!-- Mensaje de bienvenida -->
-        <!-- Incluir foto e parrafos con informacion -->
-        <!--<img src="https://randomuser.me/api/portraits/men/64.jpg" alt=""> -->
-        <h2 class="text-center">DATOS PESRONALES</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, voluptas!</p>
-        <p class="ext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, velit ipsum qui totam tempora beatae dignissimos doloribus maxime quaerat ex adipisci alias blanditiis rerum architecto. Aspernatur cumque est ab nemo tempora! Saepe voluptatem qui ullam, in maiores voluptatibus minus commodi iure quaerat. Dolorum esse expedita soluta, dolore amet qui cupiditate?</p>
+    <section class="text_exp" id="principal">
+        
+        <!-- Mensaje de bienvenida -->
+        
+        <h2 class="text-center">BIENVENIDO AL PROYECTO FINAL</h2>
+        <p>
+            En esta pagina se presenta el proyecto final propuesto por el Modulo II de Argentina Programa. En esta pagina podrá observar los detalles correspondientes a un curriculum vitae y los datos pertinentes al mismo. Los datos se han extraido por un generador de datos aleatorios y ficticios proporcionado por el curso. Este proyecto demuestra los conocimientos adquiridos a traves del curso.
+        </p>
+        
+        <p class="">
+            En la parte inferior se podran ver los datos sobre la persona, una foto del mismo, su informasion profesional y la informacion para contactarlo. Por la parte derecha de puede ver un menu desplegable, que se acciona haciendo click en la esquina superior izquierda, en él se puede cambiar el tema de la pagina y ver una pagina anexa.
+        </p>
         
     </section>
     
-    <section class=""><!-- Informacion personal -->
+    <section class="text_exp">
+        
+        <!-- Informacion personal -->
+        
         <!-- Incluir foto e parrafos con informacion -->
-        <img src="pngwing.com.png" alt="imagen personal">
-        <!--<img src="https://randomuser.me/api/portraits/men/64.jpg" alt=""> -->
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, voluptas!</p>
-        <p class="ext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, velit ipsum qui totam tempora beatae dignissimos doloribus maxime quaerat ex adipisci alias blanditiis rerum architecto. Aspernatur cumque est ab nemo tempora! Saepe voluptatem qui ullam, in maiores voluptatibus minus commodi iure quaerat. Dolorum esse expedita soluta, dolore amet qui cupiditate?</p>
-        <h2 class="text-center">DATOS PESRONALES</h2>
+        
+        <!-- Las fotos utilizadas provienen de la pagina: https://sp.depositphotos.com/stock-photos/engineer.html?filter=all -->
+        
+        <div class="contenedor-info">
+            
+            <img src="https://randomuser.me/api/portraits/men/64.jpg"  class="perfil" alt="">
+            
+            <div class="info">
+        
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, voluptas!
+                </p>
+           
+                <p class="ext">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, velit ipsum qui totam tempora beatae dignissimos doloribus maxime quaerat ex adipisci alias blanditiis rerum architecto. Aspernatur cumque est ab nemo tempora! Saepe voluptatem qui ullam, in maiores voluptatibus minus commodi iure quaerat. Dolorum esse expedita soluta, dolore amet qui cupiditate?
+                </p>
+            
+                <h2 class="text-center">DATOS PESRONALES</h2>
+            
+            </div>
+            
+        </div>
+    
     </section>
     
-    <section class="mid"><!-- Informacion profesional -->
+    <section class="text_exp">
+        
+        <!-- Informacion profesional -->
+        
         <!-- Incluir foto e parrafos con informacion -->
-        <img src="pngwing.com.png" class="mid" alt="imagen profesional">
-        <p class="mid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, velit ipsum qui totam tempora beatae dignissimos doloribus maxime quaerat ex adipisci alias blanditiis rerum architecto. Aspernatur cumque est ab nemo tempora! Saepe voluptatem qui ullam, in maiores voluptatibus minus commodi iure quaerat. Dolorum esse expedita soluta, dolore amet qui cupiditate?</p>
-        <h2 class="text-center">DATOS PROFESIONAL</h2>
+        
+        <div class="mid contenedor-info">
+            
+            <!-- <img class="profesional" src="https://st4.depositphotos.com/2572561/22247/i/1600/depositphotos_222477782-stock-photo-chief-engineer-hard-hat-walks.jpg" alt="imagen personal"> -->
+            <!-- <img class="profesional" src="https://st2.depositphotos.com/1022135/7125/i/950/depositphotos_71254041-stock-photo-engineer-in-the-factory.jpg" alt=""> -->
+            
+                
+            <img class="profesional" src="https://st2.depositphotos.com/3889193/9658/i/950/depositphotos_96585032-stock-photo-engineering-students-using-a-3d.jpg" alt="">
+        
+            <!-- <img src="pngwing.com.png" class="mid" alt="imagen profesional"> -->
+            
+            <div class=" mid info">
+
+                <p class="">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, velit ipsum qui totam tempora beatae dignissimos doloribus maxime quaerat ex adipisci alias blanditiis rerum architecto. Aspernatur cumque est ab nemo tempora! Saepe voluptatem qui ullam, in maiores voluptatibus minus commodi iure quaerat. Dolorum esse expedita soluta, dolore amet qui cupiditate?
+                </p>
+            
+                <h2 class="text-center">DATOS PROFESIONAL</h2>
+    
+            </div>
+            
+        </div>
+
     </section>
 
-    <section class=""><!-- Informacion de Contacto -->
-            <!-- Incluir foto e parrafos con informacion -->
-            <img src="pngwing.com.png" alt="imagen de contactos">
-            <p class="ext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, velit ipsum qui totam tempora beatae dignissimos doloribus maxime quaerat ex adipisci alias blanditiis rerum architecto. Aspernatur cumque est ab nemo tempora! Saepe voluptatem qui ullam, in maiores voluptatibus minus commodi iure quaerat. Dolorum esse expedita soluta, dolore amet qui cupiditate?</p>
-            <h2 class="text-center">DATOS DE CONTACTO</h2>
+    <section class="text_exp">
+        
+        <!-- Informacion de Contacto -->
+        
+        <!-- Incluir foto e parrafos con informacion -->
+        <div class="contenedor-info">
+            <img src="logos/contacto.svg" alt="imagen de contactos">
+
+            <div class="info">
+
+                <p class="ext contenedor">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, velit ipsum qui totam tempora beatae dignissimos doloribus maxime quaerat ex adipisci alias blanditiis rerum architecto. Aspernatur cumque est ab nemo tempora! Saepe voluptatem qui ullam, in maiores voluptatibus minus commodi iure quaerat. Dolorum esse expedita soluta, dolore amet qui cupiditate?
+                </p>
+                    
+                <h2 class="text-center">DATOS DE CONTACTO</h2>
+    
+            </div>
+            
+        </div>
+    
     </section>
     
     
     <footer class=""> 
         
-        <p>INFORMACION ADICIONAL</p>
-        <small>&copy; 2023 <b>acvDevelopers</b> - TODOS LOS DERECHOS RESEVADOS</small>
+        <p>
+            INFORMACION ADICIONAL
+        </p>
+
+        <small>&copy; 2023 
+            <b>acvDevelopers</b> - TODOS LOS DERECHOS RESEVADOS
+        </small>
         
     </footer>
 
