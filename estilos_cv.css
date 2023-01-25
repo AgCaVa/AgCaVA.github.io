@@ -350,3 +350,47 @@ body.dark .profesional{
         justify-content: space-around
     }
 }
+
+
+/* -------------------- modificaciones de la pagina documentos--------------------- */
+
+
+.body-docs{
+    height: 100vh;
+
+}
+
+.sec-docs{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.contenedor-box{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+    height: 178px;
+    width: 80%;
+}
+
+.box-docs{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+    align-items: center;
+    
+}
+
+.sub-tit-docs{
+    text-align: center;
+}
+
+.img-docs{
+    height: 100px;
+    width: 400px;
+    cursor: pointer;
+}
+

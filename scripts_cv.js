@@ -11,7 +11,7 @@ var boton= document.getElementById("cambio_boton");
 var modo = document.getElementById("animado");
 
 //--------------FUNCIONES AUXILIARES---------------------
- function deslizamiento_menu(){
+function deslizamiento_menu(){
     // archivo.classList.toggle("ajuste_body");
     menu.classList.toggle("ajuste_menu");
  }
@@ -22,8 +22,10 @@ function modo_oscuro(){
     archivo.classList.toggle("dark");
 }
 
-function escritura_de_datos(){
+// ----------------------- LAS FUNCIONES SIGUIENTES TOMAN DATOS DE UNA API Y DE UN ARCHIVO .JSON RESPECTIVAMENTE -----------------
 
+function escritura_de_datos(){
+// -------- DATOS DE API-------
     fetch("https://randomuser.me/api")
     .then(function (resultado){
 
@@ -49,6 +51,7 @@ function escritura_de_datos(){
 }
 
 function escritura_datos_extra(){
+    // ---- DATOS DEL .JSON------   
     fetch('Datos.json')
     .then(function (resultado){
 
